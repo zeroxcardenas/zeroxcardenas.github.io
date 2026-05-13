@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noticias - Mantellina 99.9FM</title>
+  <link rel="icon" sizes="192x192" href="logo-mantellina.png" />
+  <link rel="stylesheet" href="../index.css" />
+  <style>
+    /* Solo estilos de la sección noticias */
+    #noticias-pagina{
+      background-color: white;
+      padding: 120px 12px 100px;
+    }
+
+    #noticias-pagina .container{
+      max-width: 1000px;
+    }
+
+    .noticias-grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .noticia-card{
+      background: rgba(245,245,245,0.9);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .noticia-card:hover{
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(101,33,165,0.18);
+    }
+
+    .noticia-card img{
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+      border-bottom: 3px solid rgba(101, 33, 165, 0.45);
+    }
+
+    .noticia-card h3{
+      font-size: 1.35em;
+      margin: 1rem 1rem 0.5rem;
+      text-align: center;
+      color: #222;
+    }
+
+    .noticia-card p{
+      margin: 0 1rem 1.2rem;
+      text-align: justify;
+      color: #444;
+      font-size: 1.05em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <p class="logo">Mantellina 99.9FM</p>
+      <nav>
+        <a href="../historia/Historia.html">Historia</a>
+        <a href="../programas/Programas.html">Programacion</a>
+        <a href="../noticias/noticia.html">Noticias</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="volver-seccion">
+      <div class="container">
+        <a class="btn-volver" href="../pagina principal.html">← Volver a la página principal</a>
+      </div>
+    </section>
+
+    <section id="noticias-pagina">
+      <div class="container">
+        <h1>Noticias</h1>
+        <div class="noticias-grid">
+          <article class="noticia-card">
+            <img src="imagen/imagen (2).jpeg" alt="Imagen 1" />
+            <h3>55 AÑOS CONSTRUYENDO NUESTRO PAIS</h3>
+            <p>Momentos en los que se coloca la primera piedra para la construcción de la planta de Cementos Táchira.</p>
+          </article>
+
+          <article class="noticia-card">
+            <img src="imagen/imagen (3).jpeg" alt="Imagen 2" />
+            <h3>PREVENGA DE GUASIMOS CONFORMAN ALIANZA ELECTORAL CON MEP Y MAS</h3>
+            <p>Después de una serie de conversaciones y de sondeos ante la opinión pública de los habitantes de Guásimos (Palmira) y con miras a rescatar el prestigio del poder municipal, el Grupo de Electores "Presencia Electoral Vecinos de Guásimos y los independientes agrupados en ELINGUA, conjuntamente con el Movimiento al Socialismo, Movimiento Electoral del Pueblo, tendientes asimismo a presentar a los electores del Municipio una alternativa de cambio para el proceso electoral venidero.</p>
+          </article>
+
+          <article class="noticia-card">
+            <img src="imagen/imagen (9).jpeg" alt="Imagen 3" />
+            <h3>DESDE PALMIRA PARA LA HISTORIA</h3>
+            <p>Velásquez es conocido por su defensa de la democracia y los derechos humanos, enfrentando diversos regímenes autoritarios a lo largo de su vida. También fue un ferviente crítico de la corrupción. En su papel como presidente, trató de estabilizar la economía y promover el diálogo nacional en un contexto de crisis política y económica. Además de su carrera política, Velásquez fue un prolífico escritor y articulista, contribuyendo al análisis político y social de Venezuela. Su legado incluye su compromiso con la democracia y la búsqueda de un futuro mejor para su país.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Mantellina 99.9FM</p>
+    </div>
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Programación - Mantellina 99.9FM</title>
+  <link rel="icon" sizes="192x192" href="logo-mantellina.png" />
+  <link rel="stylesheet" href="../index.css" />
+  <style>
+    /* Estilos SOLO del contenido de Programas (evitar sobrescribir layout global) */
+    .page-title{
+      color: white;
+      text-align: center;
+      font-weight: 800;
+      margin: 0 0 2rem;
+      font-size: 3rem;
+    }
+
+    #programas-pagina{
+      background: rgb(30,30,30);
+      color: white;
+      padding: 140px 12px 80px;
+      text-align: center;
+    }
+
+    #programas-pagina .container{
+      max-width: 1000px;
+    }
+
+    #programas-pagina section{
+      background: rgba(255,255,255,0.06);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgb(0 0 0 / 0.15);
+      padding: 2.5rem 2rem;
+      margin: 0 auto 2.5rem;
+      max-width: 900px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    #programas-pagina section:hover{
+      box-shadow: 0 14px 35px rgb(101 33 165 / 0.22);
+    }
+
+    #programas-pagina h2{
+      font-weight: 800;
+      font-size: 2.2rem;
+      margin: 0 0 1.5rem;
+      color: white;
+      text-align: center;
+    }
+
+    #programas-pagina p{
+      margin: 0 auto;
+      max-width: 650px;
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.92);
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    #programas-pagina ul{
+      list-style: none;
+      padding-left: 0;
+      margin: 0 auto;
+      max-width: 520px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    #programas-pagina li{
+      color: rgba(255,255,255,0.92);
+      font-weight: 700;
+      padding: 0.9rem 1rem;
+      background: rgba(255,255,255,0.08);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    }
+
+    #programas-pagina li::before{
+      content: attr(data-hours);
+      flex: 0 0 7rem;
+      font-weight: 800;
+      color: #e6d1ff;
+    }
+
+    #programas-pagina form{
+      max-width: 650px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    #programas-pagina label{
+      font-weight: 700;
+      text-align: left;
+    }
+
+    #programas-pagina input,
+    #programas-pagina textarea{
+      font-family: inherit;
+      font-size: 1rem;
+      padding: 0.8rem 1rem;
+      border-radius: 10px;
+      border: 1.5px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.06);
+      color: white;
+      outline: none;
+    }
+
+    #programas-pagina input:focus,
+    #programas-pagina textarea:focus{
+      border-color: rgba(167, 90, 255, 0.95);
+      box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.25);
+    }
+
+    #programas-pagina textarea{
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    #programas-pagina button{
+      width: 60%;
+      margin: 0 auto;
+      background-color: blueviolet;
+      color: white;
+      font-weight: 800;
+      font-size: 1.1rem;
+      padding: 0.95rem 1.4rem;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(124, 58, 237, 0.35);
+      transition: transform 0.2s ease, background-color 0.3s ease;
+    }
+
+    #programas-pagina button:hover{
+      background-color: rgba(101, 33, 165, 1);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px){
+      .page-title{ font-size: 2.2rem; }
+      #programas-pagina h2{ font-size: 1.7rem; }
+      #programas-pagina button{ width: 90%; }
+      #programas-pagina li::before{ flex-basis: 5.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <p class="logo">Mantellina 99.9FM</p>
+      <nav>
+        <a href="../historia/Historia.html">Historia</a>
+        <a href="Programas.html" aria-current="page">Programacion</a>
+        <a href="../noticias/noticia.html">Noticias</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="volver-seccion">
+      <div class="container">
+        <a class="btn-volver" href="../pagina principal.html">← Volver a la página principal</a>
+      </div>
+    </section>
+
+    <section id="programas-pagina">
+      <div class="container">
+        <h1 class="page-title">Programación</h1>
+
+        <section>
+          <h2>Programas de la Radio</h2>
+          <p>
+            La radio ha sido durante mucho tiempo un medio de comunicación fundamental, que no solo informa,
+            sino que también entretiene y conecta a las comunidades.
+            Una emisora local como Mantellina 99.9 FM se convierte en un punto de encuentro donde los oyentes
+            pueden disfrutar de una variada programación que abarca desde la música y el entretenimiento, hasta
+            análisis profundos sobre la actualidad.
+          </p>
+        </section>
+
+        <section>
+          <h2>Programas de la mañana</h2>
+          <ul>
+            <li data-hours="5:30 - 7:00">Despertar con Mantellina</li>
+            <li data-hours="7:00 - 8:00">Raíces Venezolanas</li>
+            <li data-hours="8:00 - 10:00">Código del Amor</li>
+            <li data-hours="10:00 - 11:00">Camino de Libertad</li>
+            <li data-hours="11:00 - 12:00">Senderos / Instituciones y personajes</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Programas de la tarde</h2>
+          <ul>
+            <li data-hours="12:00 - 14:00">Música Instrumental</li>
+            <li data-hours="14:00 - 16:00">Música Bailable</li>
+            <li data-hours="16:00 - 17:00">Tardes Musicales</li>
+            <li data-hours="17:00 - 19:00">Música Venezolana</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Programas de la noche</h2>
+          <ul>
+            <li data-hours="19:00 - 21:00">Música Bailable</li>
+            <li data-hours="21:00 - 00:00">Música del Recuerdo</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Consultas y Sugerencias</h2>
+          <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Nombre" required aria-required="true" />
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" placeholder="Correo electrónico" required aria-required="true" />
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" placeholder="Mensaje" required aria-required="true"></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Mantellina 99.9FM</p>
+    </div>
+  </footer>
+</body>
+</html>
+
